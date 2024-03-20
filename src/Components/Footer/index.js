@@ -4,6 +4,7 @@ import {
   FooterMail,
   FooterText,
   FooterSocials,
+  FooterSocial,
 } from "./styled";
 
 export const Footer = ({ extraContent }) => (
@@ -15,6 +16,8 @@ export const Footer = ({ extraContent }) => (
       website, dashboard or mobile app in mind and need some help to make your
       ideas come to life, feel free to contact me. 👊
     </FooterText>
-    <FooterSocials>{extraContent}</FooterSocials>
+    <FooterSocials>
+      <FooterSocial>IG</FooterSocial>
+    </FooterSocials>
   </FooterWrapper>
 );

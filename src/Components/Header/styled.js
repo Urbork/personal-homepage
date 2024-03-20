@@ -32,4 +32,5 @@ export const HeaderCallToAction = styled.button`
   border-radius: 4px;
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.mainBlueLM};
+  cursor: pointer;
 `;

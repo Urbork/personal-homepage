@@ -16,7 +16,6 @@ function App() {
           body={skills.map((item) => (
             <ContentItem key={item}>{item}</ContentItem>
           ))}
-          extraHeaderContent={<button>XYYz</button>}
         />
         <Section
           title="What I want to learn 🚀"
@@ -25,7 +24,7 @@ function App() {
           ))}
         />
         <Portfolio title="Portfolio" body="XTEst" />
-        <Footer extraContent={<button>IG</button>} />
+        <Footer />
       </Container>
     </>
   );

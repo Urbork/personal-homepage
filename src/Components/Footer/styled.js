@@ -24,3 +24,7 @@ export const FooterMail = styled.a`
 export const FooterText = styled.p``;
 
 export const FooterSocials = styled.div``;
+
+export const FooterSocial = styled.button`
+  cursor: pointer;
+`;

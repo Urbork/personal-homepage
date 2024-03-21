@@ -21,7 +21,7 @@ export const HeaderHeading = styled.h2`
   font-weight: 800;
 `;
 
-export const HeaderAbout = styled.div`
+export const HeaderAbout = styled.p`
   margin: 32px 0;
   color: ${({ theme }) => theme.color.textSecondary};
 `;
@@ -33,4 +33,9 @@ export const HeaderCallToAction = styled.button`
   color: ${({ theme }) => theme.color.white};
   background-color: ${({ theme }) => theme.color.mainBlueLM};
   cursor: pointer;
+
+  &:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+  }
 `;

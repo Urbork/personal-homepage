@@ -17,14 +17,28 @@ export const FooterMail = styled.a`
   transition: 0.5s;
 
   &:hover {
-    color: red;
+    color: ${({ theme }) => theme.color.mainBlueLM};
   }
 `;
 
 export const FooterText = styled.p``;
 
-export const FooterSocials = styled.div``;
+export const FooterSocials = styled.ul`
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  color: ${({ theme }) => theme.color.white};
+`;
 
-export const FooterSocial = styled.button`
+export const FooterSocial = styled.li`
+  list-style: none;
+  padding: 8px;
+  background-color: ${({ theme }) => theme.color.black};
   cursor: pointer;
+
+  &:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: ${({ theme }) => theme.color.mainBlueLM};
+  }
 `;

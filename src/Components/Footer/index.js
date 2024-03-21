@@ -18,6 +18,9 @@ export const Footer = ({ extraContent }) => (
     </FooterText>
     <FooterSocials>
       <FooterSocial>IG</FooterSocial>
+      <FooterSocial>GitHub</FooterSocial>
+      <FooterSocial>LinkedIn</FooterSocial>
+      <FooterSocial>X</FooterSocial>
     </FooterSocials>
   </FooterWrapper>
 );

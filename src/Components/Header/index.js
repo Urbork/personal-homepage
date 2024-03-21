@@ -18,8 +18,8 @@ export const Header = ({ name, body, extraHeaderContent }) => (
       <HeaderTopText>THIS IS</HeaderTopText>
       <HeaderHeading>{name}</HeaderHeading>
       <HeaderAbout>
-        I'm a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities. 🔥
+        👦👨‍🦱🧔 I'm a passionate Frontend Developer in love with React, currently
+        looking for new job opportunities.
       </HeaderAbout>
       <a href="mailto: jajonaszjj@gmail.com">
         <HeaderCallToAction>✉ HIRE ME</HeaderCallToAction>

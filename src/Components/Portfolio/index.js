@@ -1,6 +1,5 @@
 import {
   PortfolioWrapper,
-  PortfolioImage,
   PortfolioHeading,
   PortfolioText,
   PortfolioItems,
@@ -10,6 +9,9 @@ import {
   PortfolioLink,
 } from "./styled";
 import { useRepositories } from "./useRepositories";
+import logo from "../images/Github_black.svg";
+
+const Logo = () => <img src={logo} alt="" />;
 
 export const Portfolio = ({ title, body }) => {
   const repositoriesData = useRepositories();
@@ -18,22 +20,29 @@ export const Portfolio = ({ title, body }) => {
     <PortfolioItem key={repo.node_id}>
       <PortfolioName>{repo.name}</PortfolioName>
       <PortfolioDescription>{repo.description}</PortfolioDescription>
+      DemoTE:{" "}
+      <PortfolioLink
+        href={`${repo.homepage}`}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {repo.homepage}
+      </PortfolioLink>
       <br />
-      DEMO:{" "}
-      <PortfolioLink href={`${repo.homepage}`}>{repo.homepage}</PortfolioLink>
-      <br />
-      CODE:{" "}
-      <PortfolioLink href={`${repo.html_url}`}>{repo.html_url}</PortfolioLink>
+      CodeST:{" "}
+      <PortfolioLink
+        href={`${repo.html_url}`}
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        {repo.html_url}
+      </PortfolioLink>
     </PortfolioItem>
   ));
 
   return (
     <PortfolioWrapper>
-      <PortfolioImage
-        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        width={40}
-        alt=""
-      />
+      <Logo />
       <PortfolioHeading>{title}</PortfolioHeading>
       <PortfolioText>My recet projects</PortfolioText>
       <PortfolioItems>{reposList}</PortfolioItems>

@@ -14,18 +14,14 @@ export const Heading = styled.h2`
   margin-bottom: 0;
   padding-bottom: 12px;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 0.05em;
   border-bottom: 1px solid ${({ theme }) => theme.color.neutralBG};
 `;
 
 export const ContentList = styled.ul`
   display: grid;
-  /* define the number of rows you
-     require: */
-  /* grid-template-rows: repeat(8, 1fr); */
   grid-template-columns: repeat(3, 1fr);
-  /* set the flow of the grid to follow
-     a columnar layout: */
   grid-auto-flow: row;
   padding: 0 20px;
   margin: 32px;
@@ -33,7 +29,9 @@ export const ContentList = styled.ul`
 
 export const ContentItem = styled.li`
   margin: 4px 0;
-  /* padding: 0; */
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 140%;
   color: ${({ theme }) => theme.color.textSecondary};
 
   &::marker {

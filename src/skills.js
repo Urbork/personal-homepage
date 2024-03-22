@@ -16,7 +16,9 @@ export const skills = [
   "Working with API (fetch, axios)",
   "Error Handling",
   "Scrum",
-  "Trello",
+  "Trello & Jira",
+  "Figma",
+  "Photoshop & Illustrator",
   "Teamwork",
 ];
 

@@ -22,7 +22,7 @@ export const Header = ({ name, body, extraHeaderContent }) => (
         looking for new job opportunities.
       </HeaderAbout>
       <a href="mailto: jajonaszjj@gmail.com">
-        <HeaderCallToAction>✉ HIRE ME</HeaderCallToAction>
+        <HeaderCallToAction>✉ Hire Me</HeaderCallToAction>
       </a>
     </HeaderContent>
   </HeaderWrapper>

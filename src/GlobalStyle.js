@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: whitesmoke;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Inter", sans-serif;
     word-break: break-word;
     color: ${({ theme }) => theme.color.black};
   }

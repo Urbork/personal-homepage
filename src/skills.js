@@ -1,3 +1,5 @@
+export const mailAddress = "jajonaszjj@gmail.com";
+
 export const skills = [
   "React",
   "React Hooks",
@@ -6,13 +8,13 @@ export const skills = [
   "React Router",
   "Git & GitHub",
   "JavaScript ES6+",
+  "JSX",
   "NPM",
   "Semantic and accessible HTML",
   "Responsive Web Design",
   "Markdown",
   "CSS BEM convention",
-  "CSS Flexbox",
-  "CSS Grid",
+  "CSS Flexbox & Grid",
   "Working with API (fetch, axios)",
   "Error Handling",
   "Scrum",

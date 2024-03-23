@@ -6,6 +6,7 @@ import {
   HeaderAbout,
   HeaderCallToAction,
 } from "./styled";
+import { mailAddress } from "../../skills";
 
 export const Header = ({ name, body, extraHeaderContent }) => (
   <HeaderWrapper>
@@ -21,7 +22,7 @@ export const Header = ({ name, body, extraHeaderContent }) => (
         👦👨‍🦱🧔 I'm a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
       </HeaderAbout>
-      <a href="mailto: jajonaszjj@gmail.com">
+      <a href={`mailto: ${mailAddress}`}>
         <HeaderCallToAction>✉ Hire Me</HeaderCallToAction>
       </a>
     </HeaderContent>

@@ -13,7 +13,7 @@ import logo from "../images/Github_black.svg";
 
 const Logo = () => <img src={logo} alt="" />;
 
-export const Portfolio = ({ title, body }) => {
+export const Portfolio = () => {
   const repositoriesData = useRepositories();
 
   const reposList = repositoriesData.repos.data.map((repo) => (
@@ -43,7 +43,7 @@ export const Portfolio = ({ title, body }) => {
   return (
     <PortfolioWrapper>
       <Logo />
-      <PortfolioHeading>{title}</PortfolioHeading>
+      <PortfolioHeading>Portfolio</PortfolioHeading>
       <PortfolioText>My recet projects</PortfolioText>
       <PortfolioItems>{reposList}</PortfolioItems>
     </PortfolioWrapper>

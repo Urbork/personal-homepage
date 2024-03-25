@@ -1,4 +1,8 @@
 export const theme = {
+  breakpoint: {
+    tablet: 1100,
+    mobile: 767,
+  },
   color: {
     white: "#FFFFFF",
     black: "#252525",

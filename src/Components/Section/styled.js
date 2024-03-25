@@ -17,6 +17,10 @@ export const Heading = styled.h2`
   font-weight: 800;
   letter-spacing: 0.05em;
   border-bottom: 1px solid ${({ theme }) => theme.color.neutralBG};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const ContentList = styled.ul`
@@ -25,6 +29,15 @@ export const ContentList = styled.ul`
   grid-auto-flow: row;
   padding: 0 20px;
   margin: 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.tablet}px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ContentItem = styled.li`
@@ -36,5 +49,9 @@ export const ContentItem = styled.li`
 
   &::marker {
     color: ${({ theme }) => theme.color.mainBlueLM};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
   }
 `;

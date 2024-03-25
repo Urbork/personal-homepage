@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  max-width: 50%;
+  max-width: ${({ theme }) => theme.breakpoint.mobile}px;
   margin-top: 120px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-top: 48px;
+  }
 `;
 
 export const FooterTopText = styled.p`
@@ -24,6 +28,10 @@ export const FooterMail = styled.a`
   &:hover {
     color: ${({ theme }) => theme.color.mainBlueLM};
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const FooterText = styled.p`
@@ -32,6 +40,11 @@ export const FooterText = styled.p`
   letter-spacing: 0.05em;
   line-height: 140%;
   color: ${({ theme }) => theme.color.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
 `;
 
 export const FooterSocials = styled.ul`

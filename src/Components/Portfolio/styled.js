@@ -21,6 +21,10 @@ export const PortfolioHeading = styled.h2`
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 0.05em;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 18px;
+  }
 `;
 
 export const PortfolioText = styled.p`
@@ -28,6 +32,10 @@ export const PortfolioText = styled.p`
   font-size: 20px;
   letter-spacing: 0.05em;
   line-height: 140%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 17px;
+  }
 `;
 
 export const PortfolioItems = styled.ul`
@@ -40,6 +48,11 @@ export const PortfolioItems = styled.ul`
   :hover {
     transition: 1s;
     border: 5px solid ${({ theme }) => theme.color.mainBlueLM};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 `;
 
@@ -54,6 +67,10 @@ export const PortfolioItem = styled.li`
   :hover {
     border: none;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    padding: 24px;
+  }
 `;
 
 export const PortfolioName = styled.h3`
@@ -62,6 +79,10 @@ export const PortfolioName = styled.h3`
   font-weight: bold;
   letter-spacing: 0.05em;
   color: ${({ theme }) => theme.color.mainBlueLM};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 16px;
+  }
 `;
 
 export const PortfolioDescription = styled.p`
@@ -69,6 +90,10 @@ export const PortfolioDescription = styled.p`
   letter-spacing: 0.05em;
   line-height: 140%;
   color: ${({ theme }) => theme.color.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+  }
 `;
 
 export const PortfolioLink = styled.a`
@@ -76,4 +101,8 @@ export const PortfolioLink = styled.a`
   letter-spacing: 0.05em;
   line-height: 140%;
   color: ${({ theme }) => theme.color.mainBlueLM};
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    font-size: 14px;
+  }
 `;

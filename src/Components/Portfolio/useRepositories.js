@@ -25,8 +25,8 @@ export const useRepositories = () => {
             error: error,
           });
         });
-    }, 1000);
+    }, 3000);
   }, []);
 
-  return { repos: reposData };
+  return reposData;
 };

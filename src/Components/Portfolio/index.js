@@ -9,6 +9,7 @@ import {
   PortfolioLink,
 } from "./styled";
 import { useRepositories } from "./useRepositories";
+import { Loading } from "./Loading";
 import logo from "../images/Github_black.svg";
 
 const Logo = () => <img src={logo} alt="" />;
@@ -16,7 +17,7 @@ const Logo = () => <img src={logo} alt="" />;
 export const Portfolio = () => {
   const repositoriesData = useRepositories();
 
-  const reposList = repositoriesData.repos.data.map((repo) => (
+  const reposList = repositoriesData.data.map((repo) => (
     <PortfolioItem key={repo.node_id}>
       <PortfolioName>{repo.name}</PortfolioName>
       <PortfolioDescription>{repo.description}</PortfolioDescription>
@@ -45,7 +46,11 @@ export const Portfolio = () => {
       <Logo />
       <PortfolioHeading>Portfolio</PortfolioHeading>
       <PortfolioText>My recet projects</PortfolioText>
-      <PortfolioItems>{reposList}</PortfolioItems>
+      {repositoriesData.isLoading ? (
+        <Loading />
+      ) : (
+        <PortfolioItems>{reposList}</PortfolioItems>
+      )}
     </PortfolioWrapper>
   );
 };

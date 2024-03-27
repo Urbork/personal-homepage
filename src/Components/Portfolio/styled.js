@@ -1,16 +1,10 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubLogo } from "../images/Github_black.svg";
+import { ReactComponent as GitHubLogo } from "./github.svg";
 
 export const PortfolioWrapper = styled.section`
   margin-top: 72px;
   text-align: center;
-  /* font-size: 18px;
-  letter-spacing: 0.05em;
-  line-height: 140%;
-  color: ${({ theme }) => theme.color.textSecondary}; */
 `;
-
-export const PortfolioImage = styled.img``;
 
 export const StyledGitHubLogo = styled(GitHubLogo)`
   color: ${({ theme }) => theme.color.mainBlueLM};

@@ -8,16 +8,10 @@ import {
   HeaderImage,
 } from "./styled";
 import { aboutMe } from "../../aboutMe";
-// import photo from "./IMG_2438.JPG";
 import photo from "./20152.jpg";
 
 export const Header = () => (
   <HeaderWrapper>
-    {/* <img
-      src="https://cdn-icons-png.flaticon.com/512/4128/4128349.png"
-      width={384}
-      alt=""
-    /> */}
     <HeaderImage src={photo} alt="" />
     <HeaderContent>
       <HeaderTopText>THIS IS</HeaderTopText>

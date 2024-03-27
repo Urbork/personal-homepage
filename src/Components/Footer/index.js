@@ -5,6 +5,8 @@ import {
   FooterText,
   FooterSocials,
   FooterSocial,
+  StyledSocialIcon,
+  StyledLinkedInIcon,
 } from "./styled";
 import { aboutMe } from "../../aboutMe";
 
@@ -20,9 +22,13 @@ export const Footer = ({ extraContent }) => (
       ideas come to life, feel free to contact me. 👊
     </FooterText>
     <FooterSocials>
-      <FooterSocial>IG</FooterSocial>
-      <FooterSocial>GitHub</FooterSocial>
-      <FooterSocial>LinkedIn</FooterSocial>
+      <FooterSocial>
+        <StyledSocialIcon />
+      </FooterSocial>
+      <FooterSocial>
+        <StyledLinkedInIcon />
+      </FooterSocial>
+      <FooterSocial>FB</FooterSocial>
       <FooterSocial>X</FooterSocial>
     </FooterSocials>
   </FooterWrapper>

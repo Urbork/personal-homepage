@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as GitHubLogo } from "../Portfolio/github.svg";
+import { ReactComponent as LinkedInLogo } from "./LinkedIN.svg";
 
 export const FooterWrapper = styled.footer`
   max-width: ${({ theme }) => theme.breakpoint.mobile}px;
@@ -51,18 +53,20 @@ export const FooterSocials = styled.ul`
   padding: 0;
   display: flex;
   gap: 24px;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.black};
 `;
 
 export const FooterSocial = styled.li`
   list-style: none;
   padding: 8px;
-  background-color: ${({ theme }) => theme.color.black};
   cursor: pointer;
 
   &:hover {
     transition: 1s;
     transform: scale(1.05);
-    background-color: ${({ theme }) => theme.color.mainBlueLM};
   }
 `;
+
+export const StyledSocialIcon = styled(GitHubLogo)``;
+
+export const StyledLinkedInIcon = styled(LinkedInLogo)``;

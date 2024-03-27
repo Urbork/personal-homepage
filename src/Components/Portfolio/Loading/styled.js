@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as spinnerIcon } from "./spinner.svg";
 
 export const LoadingInfo = styled.p`
   font-size: 20px;
@@ -6,7 +7,8 @@ export const LoadingInfo = styled.p`
   line-height: 140%;
 `;
 
-export const LoadingIcon = styled.img`
+export const LoadingIcon = styled(spinnerIcon)`
+  color: ${({ theme }) => theme.color.mainBlueLM};
   animation: rotation 1s infinite linear;
 
   @keyframes rotation {

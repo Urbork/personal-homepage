@@ -4,6 +4,7 @@ export const useRepositories = () => {
   const [reposData, setReposData] = useState({
     isLoading: true,
     data: [],
+    error: null,
   });
 
   // const requestURL = "https://api.github.com/users/urbork/repos";
@@ -12,7 +13,12 @@ export const useRepositories = () => {
   useEffect(() => {
     setTimeout(() => {
       fetch(requestURL)
-        .then((response) => response.json())
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
         .then((data) => {
           setReposData({
             isLoading: false,

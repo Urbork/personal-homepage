@@ -10,20 +10,20 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const HeaderContent = styled.div`
-  margin: auto 32px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    margin: 0 16px;
-  }
-`;
-
 export const HeaderImage = styled.img`
   max-width: 384px;
   border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     max-width: 132px;
+  }
+`;
+
+export const HeaderContent = styled.div`
+  margin: auto 32px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    margin: 0 16px;
   }
 `;
 
@@ -58,12 +58,12 @@ export const HeaderAbout = styled.p`
 
 export const HeaderCallToAction = styled.button`
   padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.color.neutralBG};
+  border: 1px solid ${({ theme }) => theme.color.borderNeutral};
   border-radius: 4px;
   font-size: 20px;
   letter-spacing: 0.1em;
-  color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.buttonText};
+  background-color: ${({ theme }) => theme.color.mainAccent};
   cursor: pointer;
 
   &:hover {

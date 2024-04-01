@@ -23,12 +23,12 @@ export const FooterMail = styled.a`
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.secondaryAccent};
   text-decoration: none;
   transition: 0.5s;
 
   &:hover {
-    color: ${({ theme }) => theme.color.mainBlueLM};
+    color: ${({ theme }) => theme.color.mainAccent};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -53,7 +53,7 @@ export const FooterSocials = styled.ul`
   padding: 0;
   display: flex;
   gap: 24px;
-  color: ${({ theme }) => theme.color.black};
+  color: ${({ theme }) => theme.color.secondaryAccent};
 `;
 
 export const FooterSocial = styled.li`

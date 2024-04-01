@@ -8,7 +8,7 @@ export const LoadingInfo = styled.p`
 `;
 
 export const LoadingIcon = styled(spinnerIcon)`
-  color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.mainAccent};
   animation: rotation 1s infinite linear;
 
   @keyframes rotation {

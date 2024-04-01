@@ -13,7 +13,7 @@ export const ThemeWrapper = ({ children }) => {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
       <ThemeButton onClick={toggleTheme}>
-        {isDarkMode ? "jasny motyw" : "ciemny motyw"}
+        {isDarkMode ? "JASNY MOTYW" : "CIEMNY MOTYW"}
       </ThemeButton>
       {children}
     </ThemeProvider>

@@ -7,7 +7,7 @@ export const PortfolioWrapper = styled.section`
 `;
 
 export const StyledGitHubLogo = styled(GitHubLogo)`
-  color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.mainAccent};
 `;
 
 export const PortfolioHeading = styled.h2`
@@ -41,7 +41,7 @@ export const PortfolioItems = styled.ul`
 
   :hover {
     transition: 1s;
-    border: 5px solid ${({ theme }) => theme.color.mainBlueLM};
+    border: 5px solid ${({ theme }) => theme.color.mainAccent};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -53,9 +53,9 @@ export const PortfolioItems = styled.ul`
 export const PortfolioItem = styled.li`
   list-style: none;
   padding: 56px;
-  border: 5px solid ${({ theme }) => theme.color.lightGrey};
+  border: 5px solid ${({ theme }) => theme.color.portfolioBorder};
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.elementBackground};
   box-shadow: 0px 4px 20px rgba(165, 171, 176, 0.16);
 
   :hover {
@@ -72,7 +72,7 @@ export const PortfolioName = styled.h3`
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 0.05em;
-  color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.mainAccent};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 16px;
@@ -94,7 +94,7 @@ export const PortfolioLink = styled.a`
   font-size: 18px;
   letter-spacing: 0.05em;
   line-height: 140%;
-  color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.mainAccent};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;

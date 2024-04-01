@@ -5,7 +5,7 @@ export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   border-radius: 4px;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.elementBackground};
   box-shadow: 0px 4px 20px rgba(165, 171, 176, 0.16);
 `;
 
@@ -16,7 +16,7 @@ export const Heading = styled.h2`
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid ${({ theme }) => theme.color.neutralBG};
+  border-bottom: 1px solid ${({ theme }) => theme.color.borderNeutral};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 18px;
@@ -48,7 +48,7 @@ export const ContentItem = styled.li`
   color: ${({ theme }) => theme.color.textSecondary};
 
   &::marker {
-    color: ${({ theme }) => theme.color.mainBlueLM};
+    color: ${({ theme }) => theme.color.mainAccent};
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {

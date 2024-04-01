@@ -12,9 +12,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: whitesmoke;
     font-family: "Inter", sans-serif;
     word-break: break-word;
-    color: ${({ theme }) => theme.color.black};
+    color: ${({ theme }) => theme.color.secondaryAccent};
+    background-color: ${({ theme }) => theme.color.background};
+    transition: 0.2s;
   }
 `;

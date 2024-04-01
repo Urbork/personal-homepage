@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as dangerIcon } from "./danger.svg";
 
 export const ErrorIcon = styled(dangerIcon)`
-  color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.mainAccent};
 `;
 
 export const ErrorHeading = styled.h3`
@@ -18,12 +18,12 @@ export const ErrorInfo = styled.p`
 
 export const ErrorButton = styled.button`
   padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.color.neutralBG};
+  border: 1px solid ${({ theme }) => theme.color.borderNeutral};
   border-radius: 4px;
   font-size: 20px;
   letter-spacing: 0.1em;
-  color: ${({ theme }) => theme.color.white};
-  background-color: ${({ theme }) => theme.color.mainBlueLM};
+  color: ${({ theme }) => theme.color.elementBackground};
+  background-color: ${({ theme }) => theme.color.mainAccent};
   cursor: pointer;
 
   &:hover {

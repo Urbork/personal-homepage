@@ -23,7 +23,7 @@ export const Heading = styled.h2`
   }
 `;
 
-export const ContentList = styled.ul`
+export const List = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
@@ -40,7 +40,7 @@ export const ContentList = styled.ul`
   }
 `;
 
-export const ContentItem = styled.li`
+export const ListItem = styled.li`
   margin: 4px 0;
   font-size: 18px;
   letter-spacing: 0.05em;

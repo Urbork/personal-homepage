@@ -32,7 +32,7 @@ export const PortfolioText = styled.p`
   }
 `;
 
-export const PortfolioItems = styled.ul`
+export const PortfolioList = styled.ul`
   text-align: left;
   padding: 0;
   display: grid;
@@ -50,7 +50,7 @@ export const PortfolioItems = styled.ul`
   }
 `;
 
-export const PortfolioItem = styled.li`
+export const PortfolioListItem = styled.li`
   list-style: none;
   padding: 56px;
   border: 5px solid ${({ theme }) => theme.color.portfolioBorder};
@@ -66,6 +66,8 @@ export const PortfolioItem = styled.li`
     padding: 24px;
   }
 `;
+
+// ⬇⬇⬇ wydzielić do innego pliku ⬇⬇⬇
 
 export const PortfolioName = styled.h3`
   margin-top: 0px;

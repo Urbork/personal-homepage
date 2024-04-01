@@ -1,7 +1,7 @@
 import { Container } from "./Components/Container";
 import { Header } from "./Components/Header";
 import { Section } from "./Components/Section";
-import { ContentItem } from "./Components/Section/styled";
+import { ListItem } from "./Components/Section/styled";
 import { Portfolio } from "./Components/Portfolio";
 import { Footer } from "./Components/Footer";
 import { aboutMe } from "./aboutMe";
@@ -14,13 +14,13 @@ function App() {
         <Section
           title="My skillset includes 🧰"
           body={aboutMe.skills.map((item) => (
-            <ContentItem key={item}>{item}</ContentItem>
+            <ListItem key={item}>{item}</ListItem>
           ))}
         />
         <Section
           title="What I want to learn 🚀"
           body={aboutMe.toLearn.map((item) => (
-            <ContentItem key={item}>{item}</ContentItem>
+            <ListItem key={item}>{item}</ListItem>
           ))}
         />
         <Portfolio />

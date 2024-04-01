@@ -2,8 +2,8 @@ import {
   PortfolioWrapper,
   PortfolioHeading,
   PortfolioText,
-  PortfolioItems,
-  PortfolioItem,
+  PortfolioList,
+  PortfolioListItem,
   PortfolioName,
   PortfolioDescription,
   PortfolioLink,
@@ -18,7 +18,7 @@ export const Portfolio = () => {
 
   const reposList = repositoriesData.data
     ? repositoriesData.data.map((repo) => (
-        <PortfolioItem key={repo.node_id}>
+        <PortfolioListItem key={repo.node_id}>
           <PortfolioName>{repo.name}</PortfolioName>
           <PortfolioDescription>
             {repo.description}
@@ -42,7 +42,7 @@ export const Portfolio = () => {
               {repo.html_url}
             </PortfolioLink>
           </PortfolioDescription>
-        </PortfolioItem>
+        </PortfolioListItem>
       ))
     : null;
 
@@ -51,7 +51,7 @@ export const Portfolio = () => {
   ) : repositoriesData.isLoading ? (
     <Loading />
   ) : (
-    <PortfolioItems>{reposList}</PortfolioItems>
+    <PortfolioList>{reposList}</PortfolioList>
   );
 
   return (

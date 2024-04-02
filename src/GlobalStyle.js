@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    padding-bottom: 120px;
     font-family: "Inter", sans-serif;
     word-break: break-word;
     color: ${({ theme }) => theme.color.secondaryAccent};

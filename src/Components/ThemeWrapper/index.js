@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "../../theme";
-import { ThemeButton } from "./styled";
+import { ThemeButton, ThemeText, ThemeSwitch, StyledThemeIcon } from "./styled";
 
 export const ThemeWrapper = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,7 +13,10 @@ export const ThemeWrapper = ({ children }) => {
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : theme}>
       <ThemeButton onClick={toggleTheme}>
-        {isDarkMode ? "JASNY MOTYW" : "CIEMNY MOTYW"}
+        <ThemeText>DARK MODE {isDarkMode ? "ON " : "OFF "}</ThemeText>
+        <ThemeSwitch>
+          <StyledThemeIcon isDarkMode={isDarkMode} />
+        </ThemeSwitch>
       </ThemeButton>
       {children}
     </ThemeProvider>

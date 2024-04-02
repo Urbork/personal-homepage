@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubLogo } from "../Portfolio/github.svg";
-import { ReactComponent as LinkedInLogo } from "./LinkedIN.svg";
+import { ReactComponent as GitHubLogo } from "../../assets/github.svg";
+import { ReactComponent as LinkedInLogo } from "../../assets/linkedin.svg";
 
 export const FooterWrapper = styled.footer`
   max-width: ${({ theme }) => theme.breakpoint.mobile}px;
@@ -28,6 +28,7 @@ export const FooterMail = styled.a`
   transition: 0.5s;
 
   &:hover {
+    border-bottom: 1px solid;
     color: ${({ theme }) => theme.color.mainAccent};
   }
 
@@ -62,11 +63,34 @@ export const FooterSocial = styled.li`
   cursor: pointer;
 
   &:hover {
-    transition: 1s;
-    transform: scale(1.05);
+    transition: 0.5s;
+    color: ${({ theme }) => theme.color.mainAccent};
   }
 `;
 
-export const StyledSocialIcon = styled(GitHubLogo)``;
+export const SocialIcon = styled.a`
+  color: ${({ theme }) => theme.color.secondaryAccent};
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.5s;
+    color: ${({ theme }) => theme.color.mainAccent};
+    animation: shake 0.5s infinite linear;
+  }
+
+  @keyframes shake {
+    from {
+      transform: rotate(8deg);
+    }
+    50% {
+      transform: rotate(-8deg);
+    }
+    to {
+      transform: rotate(8deg);
+    }
+  }
+`;
+
+export const StyledGitHubIcon = styled(GitHubLogo)``;
 
 export const StyledLinkedInIcon = styled(LinkedInLogo)``;

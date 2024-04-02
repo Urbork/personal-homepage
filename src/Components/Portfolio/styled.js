@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubLogo } from "./github.svg";
+import { ReactComponent as GitHubLogo } from "../../assets/github.svg";
 
 export const PortfolioWrapper = styled.section`
   margin-top: 72px;
@@ -92,11 +92,26 @@ export const PortfolioDescription = styled.p`
   }
 `;
 
+export const PorfolioLinks = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  margin-top: 24px;
+`;
+
 export const PortfolioLink = styled.a`
+  text-decoration: none;
   font-size: 18px;
   letter-spacing: 0.05em;
   line-height: 140%;
   color: ${({ theme }) => theme.color.mainAccent};
+
+  &:hover {
+    transition: 0.5s;
+    font-weight: 500;
+    text-decoration: underline;
+    color: ${({ theme }) => theme.color.secondaryAccent};
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     font-size: 14px;

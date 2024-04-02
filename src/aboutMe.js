@@ -2,6 +2,10 @@ export const aboutMe = {
   name: "Jonasz",
   surname: "Jachym",
   mailAddress: "jajonaszjj@gmail.com",
+  socials: {
+    github: "https://github.com/Urbork",
+    linkedin: "https://www.linkedin.com/in/jonasz-jachym-0b5999263/",
+  },
   skills: [
     "React",
     "React Hooks",
@@ -17,6 +21,7 @@ export const aboutMe = {
     "Markdown",
     "CSS BEM convention",
     "CSS Flexbox & Grid",
+    "Tailwind CSS",
     "Working with API (fetch, axios)",
     "Error Handling",
     "Scrum",

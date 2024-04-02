@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as dangerIcon } from "./danger.svg";
+import { ReactComponent as ErrorIcon } from "../../../assets/error.svg";
 
-export const ErrorIcon = styled(dangerIcon)`
+export const StyledErrorIcon = styled(ErrorIcon)`
   color: ${({ theme }) => theme.color.mainAccent};
 `;
 
@@ -14,24 +14,4 @@ export const ErrorInfo = styled.p`
   font-size: 20px;
   letter-spacing: 0.05em;
   line-height: 140%;
-`;
-
-export const ErrorButton = styled.button`
-  padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.color.borderNeutral};
-  border-radius: 4px;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  color: ${({ theme }) => theme.color.elementBackground};
-  background-color: ${({ theme }) => theme.color.mainAccent};
-  cursor: pointer;
-
-  &:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    font-size: 18px;
-  }
 `;

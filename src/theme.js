@@ -1,7 +1,12 @@
+const breakpoint = {
+  mobile: 767,
+  tablet: 1199,
+};
+
 export const theme = {
   breakpoint: {
-    tablet: 1100,
-    mobile: 767,
+    mobile: breakpoint.mobile,
+    tablet: breakpoint.tablet,
   },
   color: {
     background: "#FBFBFE",
@@ -21,8 +26,8 @@ export const theme = {
 
 export const darkTheme = {
   breakpoint: {
-    tablet: 1100,
-    mobile: 767,
+    mobile: breakpoint.mobile,
+    tablet: breakpoint.tablet,
   },
   color: {
     background: "#252525",

@@ -4,11 +4,11 @@ import {
   HeaderTopText,
   HeaderHeading,
   HeaderAbout,
-  HeaderCallToAction,
   HeaderImage,
 } from "./styled";
+import { Button } from "../Button";
 import { aboutMe } from "../../aboutMe";
-import photo from "./20152.jpg";
+import photo from "../../assets/me.jpg";
 
 export const Header = () => (
   <HeaderWrapper>
@@ -20,9 +20,7 @@ export const Header = () => (
         👦👨‍🦱🧔 I'm a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
       </HeaderAbout>
-      <a href={`mailto: ${aboutMe.mailAddress}`}>
-        <HeaderCallToAction>✉ Hire Me</HeaderCallToAction>
-      </a>
+      <Button href={`mailto: ${aboutMe.mailAddress}`}>✉ Hire Me</Button>
     </HeaderContent>
   </HeaderWrapper>
 );

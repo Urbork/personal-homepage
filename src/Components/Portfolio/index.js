@@ -6,6 +6,7 @@ import {
   PortfolioListItem,
   PortfolioName,
   PortfolioDescription,
+  PorfolioLinks,
   PortfolioLink,
   StyledGitHubLogo,
 } from "./styled";
@@ -16,31 +17,30 @@ import { Error } from "./Error";
 export const Portfolio = () => {
   const repositoriesData = useRepositories();
 
-  const reposList = repositoriesData.data
+  const repositoriesList = repositoriesData.data
     ? repositoriesData.data.map((repo) => (
         <PortfolioListItem key={repo.node_id}>
           <PortfolioName>{repo.name}</PortfolioName>
           <PortfolioDescription>
             {repo.description}
-            <br />
-            <br />
-            Demo:{" "}
-            <PortfolioLink
-              href={`${repo.homepage}`}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {repo.homepage}
-            </PortfolioLink>
-            <br />
-            Code:{" "}
-            <PortfolioLink
-              href={`${repo.html_url}`}
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              {repo.html_url}
-            </PortfolioLink>
+            <PorfolioLinks>
+              Demo:{" "}
+              <PortfolioLink
+                href={repo.homepage}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {repo.homepage}
+              </PortfolioLink>
+              Code:{" "}
+              <PortfolioLink
+                href={repo.html_url}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {repo.html_url}
+              </PortfolioLink>
+            </PorfolioLinks>
           </PortfolioDescription>
         </PortfolioListItem>
       ))
@@ -51,7 +51,7 @@ export const Portfolio = () => {
   ) : repositoriesData.isLoading ? (
     <Loading />
   ) : (
-    <PortfolioList>{reposList}</PortfolioList>
+    <PortfolioList>{repositoriesList}</PortfolioList>
   );
 
   return (

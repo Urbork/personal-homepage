@@ -55,23 +55,3 @@ export const HeaderAbout = styled.p`
     font-size: 17px;
   }
 `;
-
-export const HeaderCallToAction = styled.button`
-  padding: 12px 16px;
-  border: 1px solid ${({ theme }) => theme.color.borderNeutral};
-  border-radius: 4px;
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  color: ${({ theme }) => theme.color.buttonText};
-  background-color: ${({ theme }) => theme.color.mainAccent};
-  cursor: pointer;
-
-  &:hover {
-    transition: 0.5s;
-    transform: scale(1.1);
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
-    font-size: 18px;
-  }
-`;

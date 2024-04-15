@@ -17,10 +17,10 @@ export const Header = () => (
       <HeaderTopText>THIS IS</HeaderTopText>
       <HeaderHeading>{aboutMe.name + " " + aboutMe.surname}</HeaderHeading>
       <HeaderAbout>
-        👦👨‍🦱🧔 I'm a passionate Frontend Developer in love with React, currently
+        👦 I'm a passionate Frontend Developer in love with React, currently
         looking for new job opportunities.
       </HeaderAbout>
-      <Button href={`mailto: ${aboutMe.mailAddress}`}>✉ Hire Me</Button>
+      <Button href={`mailto: ${aboutMe.emailAddress}`}>✉ Hire Me</Button>
     </HeaderContent>
   </HeaderWrapper>
 );

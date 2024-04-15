@@ -1,7 +1,7 @@
 export const aboutMe = {
   name: "Jonasz",
   surname: "Jachym",
-  mailAddress: "jajonaszjj@gmail.com",
+  emailAddress: "jajonaszjj@gmail.com",
   socials: {
     github: "https://github.com/Urbork",
     linkedin: "https://www.linkedin.com/in/jonasz-jachym-0b5999263/",

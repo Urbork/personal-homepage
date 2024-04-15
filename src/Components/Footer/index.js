@@ -1,32 +1,31 @@
 import {
   FooterWrapper,
   FooterTopText,
-  FooterMail,
+  FooterEmail,
   FooterText,
   FooterSocials,
-  FooterSocial,
   StyledGitHubIcon,
   StyledLinkedInIcon,
-  SocialIcon,
 } from "./styled";
+import { SocialIcon } from "./SocialIcon";
 import { aboutMe } from "../../aboutMe";
 
-export const Footer = ({ extraContent }) => (
+export const Footer = () => (
   <FooterWrapper>
     <FooterTopText>LET'S TALK</FooterTopText>
-    <FooterMail href={`mailto: ${aboutMe.mailAddress}`}>
-      {aboutMe.mailAddress}
-    </FooterMail>
+    <FooterEmail href={`mailto: ${aboutMe.emailAddress}`}>
+      {aboutMe.emailAddress}
+    </FooterEmail>
     <FooterText>
-      I'm always open to new projects whenever I have the time. If you have a
-      website, dashboard or mobile app in mind and need some help to make your
-      ideas come to life, feel free to contact me. 👊
+      I'm always open to new projects. If you have a website, dashboard or app
+      in mind and need some help to make your ideas come to life, feel free to
+      contact me. 👊
     </FooterText>
     <FooterSocials>
-      <SocialIcon>
+      <SocialIcon socialLink={aboutMe.socials.github}>
         <StyledGitHubIcon />
       </SocialIcon>
-      <SocialIcon>
+      <SocialIcon socialLink={aboutMe.socials.linkedin}>
         <StyledLinkedInIcon />
       </SocialIcon>
     </FooterSocials>

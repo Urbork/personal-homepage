@@ -1,12 +1,17 @@
-import { SectionWrapper, Heading, List, ListItem } from "./styled";
+import {
+  SectionWrapper,
+  SectionHeading,
+  SectionList,
+  SectionListItem,
+} from "./styled";
 
 export const Section = ({ title, body }) => (
   <SectionWrapper>
-    <Heading>{title}</Heading>
-    <List>
+    <SectionHeading>{title}</SectionHeading>
+    <SectionList>
       {body.map((item) => (
-        <ListItem key={item}>{item}</ListItem>
+        <SectionListItem key={item}>{item}</SectionListItem>
       ))}
-    </List>
+    </SectionList>
   </SectionWrapper>
 );

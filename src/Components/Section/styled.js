@@ -9,7 +9,7 @@ export const SectionWrapper = styled.section`
   box-shadow: 0px 4px 20px rgba(165, 171, 176, 0.16);
 `;
 
-export const Heading = styled.h2`
+export const SectionHeading = styled.h2`
   margin: 32px;
   margin-bottom: 0;
   padding-bottom: 12px;
@@ -23,7 +23,7 @@ export const Heading = styled.h2`
   }
 `;
 
-export const List = styled.ul`
+export const SectionList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
@@ -40,7 +40,7 @@ export const List = styled.ul`
   }
 `;
 
-export const ListItem = styled.li`
+export const SectionListItem = styled.li`
   margin: 4px 0;
   font-size: 18px;
   letter-spacing: 0.05em;

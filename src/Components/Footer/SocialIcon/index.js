@@ -1,5 +1,9 @@
-export const SocialIcon = ({ socialLink, socialIcon }) => (
-  <a href={socialLink}>
-    <img src={socialIcon} alt="" />
-  </a>
+import { StyledSocialItem } from "./styled";
+
+export const SocialIcon = ({ children, socialLink }) => (
+  <StyledSocialItem>
+    <a href={socialLink} target="_blank" rel="noreferrer noopener">
+      {children}
+    </a>
+  </StyledSocialItem>
 );

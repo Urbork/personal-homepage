@@ -18,7 +18,7 @@ export const FooterTopText = styled.p`
   color: ${({ theme }) => theme.color.textSecondary};
 `;
 
-export const FooterMail = styled.a`
+export const FooterEmail = styled.a`
   margin: 24px 0;
   font-size: 32px;
   font-weight: 800;
@@ -54,43 +54,57 @@ export const FooterSocials = styled.ul`
   padding: 0;
   display: flex;
   gap: 24px;
-  color: ${({ theme }) => theme.color.secondaryAccent};
 `;
 
-export const FooterSocial = styled.li`
-  list-style: none;
-  padding: 8px;
-  cursor: pointer;
+// export const FooterSocial = styled.li`
+//   list-style: none;
+//   padding: 8px;
+//   cursor: pointer;
+
+//   &:hover {
+//     transition: 0.5s;
+//     color: ${({ theme }) => theme.color.mainAccent};
+//   }
+// `;
+
+// export const SocialIcon = styled.li`
+//   list-style: none;
+//   color: ${({ theme }) => theme.color.secondaryAccent};
+//   cursor: pointer;
+
+//   &:hover {
+//     transition: 0.5s;
+//     color: ${({ theme }) => theme.color.mainAccent};
+//     animation: shake 0.5s infinite linear;
+//   }
+
+//   @keyframes shake {
+//     from {
+//       transform: rotate(8deg);
+//     }
+//     50% {
+//       transform: rotate(-8deg);
+//     }
+//     to {
+//       transform: rotate(8deg);
+//     }
+//   }
+// `;
+
+export const StyledGitHubIcon = styled(GitHubLogo)`
+  color: ${({ theme }) => theme.color.secondaryAccent};
 
   &:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     color: ${({ theme }) => theme.color.mainAccent};
   }
 `;
 
-export const SocialIcon = styled.a`
+export const StyledLinkedInIcon = styled(LinkedInLogo)`
   color: ${({ theme }) => theme.color.secondaryAccent};
-  cursor: pointer;
 
   &:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     color: ${({ theme }) => theme.color.mainAccent};
-    animation: shake 0.5s infinite linear;
-  }
-
-  @keyframes shake {
-    from {
-      transform: rotate(8deg);
-    }
-    50% {
-      transform: rotate(-8deg);
-    }
-    to {
-      transform: rotate(8deg);
-    }
   }
 `;
-
-export const StyledGitHubIcon = styled(GitHubLogo)``;
-
-export const StyledLinkedInIcon = styled(LinkedInLogo)``;

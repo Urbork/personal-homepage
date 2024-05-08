@@ -7,15 +7,15 @@ export const useRepositories = () => {
     error: null,
   });
 
-  // const requestURL = "https://api.github.com/users/urbork/repos";
-  const requestURL = "personal-homepage/testData.json";
+  const requestURL = "https://api.github.com/users/urbork/repos";
+  // const requestURL = "personal-homepage/testData.json";
 
   useEffect(() => {
     setTimeout(() => {
       fetch(requestURL)
         .then((response) => {
           if (!response.ok) {
-            throw new Error("Network response was not ok");
+            throw new Error("Response was not ok");
           }
           return response.json();
         })
@@ -31,7 +31,7 @@ export const useRepositories = () => {
             error: error,
           });
         });
-    }, 3000);
+    }, 2000);
   }, []);
 
   return reposData;

@@ -1,8 +1,8 @@
-import { Container } from "./Components/Container";
-import { Header } from "./Components/Header";
-import { Section } from "./Components/Section";
-import { Portfolio } from "./Components/Portfolio";
-import { Footer } from "./Components/Footer";
+import { Container } from "./components/Container";
+import { Header } from "./components/Header";
+import { Section } from "./components/Section";
+import { Portfolio } from "./components/Portfolio";
+import { Footer } from "./components/Footer";
 import { aboutMe } from "./aboutMe";
 
 function App() {

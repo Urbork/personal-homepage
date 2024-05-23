@@ -8,7 +8,7 @@ import {
 } from "./styled";
 import { Button } from "../Button";
 import { aboutMe } from "../../aboutMe";
-import photo from "../../assets/me.jpg";
+import photo from "../../assets/me-sq.jpg";
 
 export const Header = () => (
   <HeaderWrapper>

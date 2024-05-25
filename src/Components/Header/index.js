@@ -17,8 +17,9 @@ export const Header = () => (
       <HeaderTopText>THIS IS</HeaderTopText>
       <HeaderHeading>{aboutMe.name + " " + aboutMe.surname}</HeaderHeading>
       <HeaderAbout>
-        👦 I'm a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities.
+        👦 I've always been fascinated by the internet and creating websites,
+        which led me to pursue my dream of becoming a frontend developer. I am
+        currently seeking new job opportunities and exciting projects.
       </HeaderAbout>
       <Button href={`mailto: ${aboutMe.emailAddress}`}>✉ Hire Me</Button>
     </HeaderContent>

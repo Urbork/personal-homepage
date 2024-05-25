@@ -17,9 +17,9 @@ export const Footer = () => (
       {aboutMe.emailAddress}
     </FooterEmail>
     <FooterText>
-      I'm always open to new projects. If you have a website, dashboard or app
-      in mind and need some help to make your ideas come to life, feel free to
-      contact me. 👊
+      I'm always open to new projects. If you have a website, dashboard, or app
+      in mind and need help bringing your ideas to life, feel free to contact
+      me. 👊
     </FooterText>
     <FooterSocials>
       <SocialIcon socialLink={aboutMe.socials.github}>

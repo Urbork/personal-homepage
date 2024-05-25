@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   ::after,
   ::before {
     box-sizing: inherit;
+    transition: 0.2s;
   }
 
   body {

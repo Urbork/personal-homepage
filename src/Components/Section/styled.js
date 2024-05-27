@@ -35,7 +35,7 @@ export const SectionList = styled.ul`
     padding: 0;
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile - 200}px) {
     grid-template-columns: 1fr;
   }
 `;

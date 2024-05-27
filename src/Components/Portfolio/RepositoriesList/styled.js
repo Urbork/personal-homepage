@@ -45,6 +45,10 @@ export const RepositoryLinks = styled.div`
   grid-template-columns: auto 1fr;
   gap: 4px;
   margin-top: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const RepositoryLink = styled.a`

@@ -14,12 +14,14 @@ export const Header = () => (
   <HeaderWrapper>
     <HeaderImage src={photo} alt="" />
     <HeaderContent>
-      <HeaderTopText>THIS IS</HeaderTopText>
+      <HeaderTopText>This is</HeaderTopText>
       <HeaderHeading>{aboutMe.name + " " + aboutMe.surname}</HeaderHeading>
       <HeaderAbout>
-        👦 I've always been fascinated by the internet and creating websites,
-        which led me to pursue my dream of becoming a frontend developer. I am
-        currently seeking new job opportunities and exciting projects.
+        👦 I'm a passionate frontend developer with a deep fascination for the
+        internet and website creation. My journey has been driven by a desire to
+        bring innovative ideas to life and create engaging, user-friendly web
+        experiences. I am currently seeking new job opportunities where I can
+        leverage my skills to develop exciting projects.
       </HeaderAbout>
       <Button href={`mailto: ${aboutMe.emailAddress}`}>✉ Hire Me</Button>
     </HeaderContent>

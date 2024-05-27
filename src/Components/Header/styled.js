@@ -11,11 +11,15 @@ export const HeaderWrapper = styled.header`
 `;
 
 export const HeaderImage = styled.img`
+  width: 25vw;
+  height: 25vw;
   max-width: 384px;
+  max-height: 384px;
   border-radius: 50%;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
     max-width: 132px;
+    max-height: 132px;
   }
 `;
 
@@ -30,6 +34,7 @@ export const HeaderContent = styled.div`
 export const HeaderTopText = styled.span`
   font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.color.textSecondary};
 `;
 

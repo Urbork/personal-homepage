@@ -15,6 +15,7 @@ export const FooterTopText = styled.p`
   font-size: 12px;
   font-weight: bold;
   line-height: 130%;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.color.textSecondary};
 `;
 

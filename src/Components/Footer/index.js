@@ -12,7 +12,7 @@ import { aboutMe } from "../../aboutMe";
 
 export const Footer = () => (
   <FooterWrapper>
-    <FooterTopText>LET'S TALK</FooterTopText>
+    <FooterTopText>Let's talk</FooterTopText>
     <FooterEmail href={`mailto: ${aboutMe.emailAddress}`}>
       {aboutMe.emailAddress}
     </FooterEmail>

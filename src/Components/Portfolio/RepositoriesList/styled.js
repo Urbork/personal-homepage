@@ -57,9 +57,9 @@ export const RepositoryLink = styled.a`
   letter-spacing: 0.05em;
   line-height: 140%;
   color: ${({ theme }) => theme.color.mainAccent};
+  transition: 0.5s;
 
   &:hover {
-    transition: 0.5s;
     font-weight: 500;
     text-decoration: underline;
     color: ${({ theme }) => theme.color.secondaryAccent};

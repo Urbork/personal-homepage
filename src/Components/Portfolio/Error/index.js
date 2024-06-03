@@ -1,5 +1,5 @@
 import { StyledErrorIcon, ErrorHeading, ErrorInfo } from "./styled";
-import { Button } from "../../Button";
+import { Link } from "../../Link";
 import { aboutMe } from "../../../aboutMe";
 
 export const Error = () => (
@@ -11,6 +11,6 @@ export const Error = () => (
       <br />
       You can check them directly on Github.
     </ErrorInfo>
-    <Button href={aboutMe.socials.github}>Go to GitHub</Button>
+    <Link href={aboutMe.socials.github}>Go to GitHub</Link>
   </>
 );

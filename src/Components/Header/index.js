@@ -6,7 +6,7 @@ import {
   HeaderAbout,
   HeaderImage,
 } from "./styled";
-import { Button } from "../Button";
+import { Link } from "../Link";
 import { aboutMe } from "../../aboutMe";
 import photo from "../../assets/me-sq.jpg";
 
@@ -23,7 +23,7 @@ export const Header = () => (
         experiences. I am currently seeking new job opportunities where I can
         leverage my skills to develop exciting projects.
       </HeaderAbout>
-      <Button href={`mailto: ${aboutMe.emailAddress}`}>✉ Hire Me</Button>
+      <Link href={`mailto: ${aboutMe.emailAddress}`}>✉ Hire Me</Link>
     </HeaderContent>
   </HeaderWrapper>
 );

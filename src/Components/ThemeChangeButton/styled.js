@@ -11,11 +11,6 @@ export const ThemeButton = styled.button`
   align-items: center;
   gap: 12px;
   cursor: pointer;
-  transition: 0.5s;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 `;
 
 export const ThemeText = styled.span`

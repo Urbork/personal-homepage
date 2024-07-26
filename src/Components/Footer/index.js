@@ -7,7 +7,7 @@ import {
   StyledGitHubIcon,
   StyledLinkedInIcon,
 } from "./styled";
-import { SocialIcon } from "./SocialIcon";
+import { SocialLink } from "./SocialLink";
 import { aboutMe } from "../../aboutMe";
 
 export const Footer = () => (
@@ -22,12 +22,12 @@ export const Footer = () => (
       me. 👊
     </FooterText>
     <FooterSocials>
-      <SocialIcon socialLink={aboutMe.socials.github}>
+      <SocialLink socialLink={aboutMe.socials.github}>
         <StyledGitHubIcon />
-      </SocialIcon>
-      <SocialIcon socialLink={aboutMe.socials.linkedin}>
+      </SocialLink>
+      <SocialLink socialLink={aboutMe.socials.linkedin}>
         <StyledLinkedInIcon />
-      </SocialIcon>
+      </SocialLink>
     </FooterSocials>
   </FooterWrapper>
 );

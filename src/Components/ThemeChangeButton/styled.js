@@ -16,6 +16,7 @@ export const ThemeButton = styled.button`
 export const ThemeText = styled.span`
   font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.color.textSecondary};
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
@@ -43,6 +44,7 @@ export const StyledThemeIcon = styled(ThemeIcon)`
   ${({ isDarkMode }) =>
     isDarkMode &&
     css`
-      transform: translateX(16px);
+      /* transform: translateX(16px); */
+      transform: translateX(16px) rotate(180deg);
     `}
 `;
